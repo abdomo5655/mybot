@@ -265,10 +265,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 let usrs = db.data.users[m.sender]
 let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 ┌–––––––––––––––––✥
-│「 Hai Kak👋 」
+│「 𝗦𝗟𝗠 👋 」
 └┬❖ 「 ${conn.getName(m.sender)} 」
-┌┤❀  Bagaimana Harimu? 😄
-┊│❀  Terima Kasih Telah Menggunakan Bot Kami
+┌┤❀  𝗪𝗔𝗖𝗛 𝗖𝗩 ? 💜
+┊│❀  𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗩𝗔𝗟𝗛𝗔𝗟𝗟𝗔
 │└────────────┈ ⳹
 ┊   「 *U s e r  I n f o 克* 」
 ┊↬✗• *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
@@ -290,9 +290,9 @@ ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
   text: tek,
-  footer: '📮 *Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner',
+  footer: '📮 *Note:* 💜 بــلا سبــام دزب اك  ',
   mentions: await conn.parseMention(tek),
-  title: `${htki} *LIST MENU* ${htka}`,
+  title: `${htki} *𝐋𝐈𝐒𝐓 𝐌𝐄𝐍𝐔* ${htka}`,
   buttonText: `CLICK HERE ⎙`, 
   sections
 }
@@ -577,18 +577,18 @@ function clockStringP(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  let res = "Sudah Dini Hari Kok Belum Tidur Kak? 🥱"
+  let res = "𝐒𝐃"
   if (time >= 4) {
     res = "Pagi Lord 🌄"
   }
   if (time >= 10) {
-    res = "Selamat Siang Kak ☀️"
+    res = "Selam   "
   }
   if (time >= 15) {
-    res = "Selamat Sore Kak 🌇"
+    res = "Selam  "
   }
   if (time >= 18) {
-    res = "Malam Kak 🌙"
+    res = "Wach  HH 🌙"
   }
   return res
 }
